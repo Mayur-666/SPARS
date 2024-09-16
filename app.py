@@ -3,7 +3,6 @@ import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 from statsmodels.tsa.arima.model import ARIMA
 import matplotlib.pyplot as plt
-import matplotlib.dates as mdates
 plt.ioff()
 
 app = Flask(__name__)
