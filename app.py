@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request
 import pandas as pd
-from sklearn.preprocessing import LabelEncoder
 from statsmodels.tsa.arima.model import ARIMA
 import matplotlib.pyplot as plt
 plt.ioff()
