@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commodity Forecast</title>
+</head>
+<body>
+    <h1>Select a Commodity for Price Forecast</h1>
+    <form method="POST" action="/forecast">
+        <label for="commodity">Commodity:</label>
+        <select name="commodity" id="commodity">
+            {% for commodity in commodities %}
+                <option value="{{ commodity }}">{{ commodity }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">Get Forecast</button>
+    </form>
+</body>
+</html>

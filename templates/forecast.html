@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forecast for {{ commodity }}</title>
+</head>
+<body>
+    <h1>Price Forecast for {{ commodity }}</h1>
+    <img src="{{ url_for('static', filename='forecast.png') }}" alt="Forecasted Prices">
+</body>
+</html>
